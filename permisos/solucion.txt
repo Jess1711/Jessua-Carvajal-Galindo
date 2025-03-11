@@ -1,0 +1,155 @@
+### **Ejercicio 1**
+ Archivo: `registro.log`  
+ **Requisitos:**  
+- Solo el dueño puede leer y escribir.  
+- Otros usuarios solo pueden leerlo.  
+ Permiso esperado: `644`
+
+Explicación:  
+- Dueño: lectura (4) + escritura (2) = 6  
+- Grupo: lectura (4) = 4  
+- Otros: lectura (4) = 4  
+
+Comando:
+chmod 644 registro.log
+
+### **Ejercicio 2**
+ Archivo: `ejecutable.sh`  
+Requisitos:  
+- Solo el dueño puede leer, escribir y ejecutar.  
+- Nadie más puede acceder.  
+Permiso esperado: `700`
+
+Explicación:  
+- Dueño: lectura (4) + escritura (2) + ejecución (1) = 7  
+- Grupo: sin permisos = 0  
+- Otros: sin permisos = 0  
+
+Comando:
+chmod 700 ejecutable.sh
+
+### **Ejercicio 3**
+ Archivo: `publico.txt`  
+ Requisitos:  
+- Todos pueden leer y escribir en él.  
+Permiso esperado: `666`
+
+Explicación:  
+- Dueño: lectura (4) + escritura (2) = 6  
+- Grupo: lectura (4) + escritura (2) = 6  
+- Otros: lectura (4) + escritura (2) = 6  
+
+Comando:
+
+chmod 666 publico.txt
+
+### **Ejercicio 4**
+Archivo: `respaldo.db`  
+Requisitos:
+- Solo el dueño puede leer y escribir.  
+- Nadie más debe tener acceso.  
+
+Permiso esperado: `600`
+
+Explicación:  
+- Dueño: lectura (4) + escritura (2) = 6  
+- Grupo: sin permisos = 0  
+- Otros: sin permisos = 0  
+
+Comando:
+
+chmod 600 respaldo.db
+
+### **Ejercicio 5**
+Archivo: `instrucciones.txt`  
+Requisitos:
+- Todos pueden leerlo, pero solo el dueño puede modificarlo.  
+Permiso esperado: `644`
+
+Explicación: 
+- Dueño: lectura (4) + escritura (2) = 6  
+- Grupo: lectura (4) = 4  
+- Otros: lectura (4) = 4  
+
+Comando:
+
+chmod 644 instrucciones.txt
+
+### **Ejercicio 6**
+Archivo: `secreto.key`  
+Requisitos:  
+- Solo el dueño puede leerlo.  
+- Nadie más debe tener acceso.  
+Permiso esperado: `400`
+
+Explicación: 
+- Dueño: lectura (4) = 4  
+- Grupo: sin permisos = 0  
+- Otros: sin permisos = 0  
+
+Comando:
+
+chmod 400 secreto.key
+
+### **Ejercicio 7**
+Archivo: `ejecutar_programa`  
+Requisitos:  
+- Solo el dueño puede ejecutar el archivo.  
+- Nadie más puede leer ni modificarlo.  
+Permiso esperado: `700`
+
+Explicación:
+- Dueño: lectura (4) + escritura (2) + ejecución (1) = 7  
+- Grupo: sin permisos = 0  
+- Otros: sin permisos = 0  
+
+Comando:
+
+chmod 700 ejecutar_programa
+
+### **Ejercicio 8**
+Archivo: `compartido.doc`  
+Requisitos:  
+- Todos pueden leer y modificar el archivo.  
+Permiso esperado: `666`
+
+Explicación: 
+- Dueño: lectura (4) + escritura (2) = 6  
+- Grupo: lectura (4) + escritura (2) = 6  
+- Otros: lectura (4) + escritura (2) = 6  
+
+Comando:
+
+chmod 666 compartido.doc
+
+### **Ejercicio 9**
+Archivo: `solo_ejecucion`  
+Requisitos:
+- Solo el dueño puede ejecutar el archivo.  
+- Todos los demás pueden ejecutarlo pero no modificarlo.  
+Permiso esperado: `711`
+
+Explicación:
+- Dueño: lectura (4) + escritura (2) + ejecución (1) = 7  
+- Grupo: solo ejecución (1) = 1  
+- Otros: solo ejecución (1) = 1  
+
+Comando:
+
+chmod 711 solo_ejecucion
+
+### **Ejercicio 10**
+Archivo: `reporte_admin.pdf`  
+Requisitos:  
+- Solo el dueño puede leer y escribir.  
+- El grupo del dueño puede leerlo.  
+- Otros usuarios no pueden acceder.  
+Permiso esperado:** `640`
+
+Explicación:
+- Dueño: lectura (4) + escritura (2) = 6  
+- Grupo: lectura (4) = 4
+
+Comando:
+
+chmod 640 reporte_admin.pdf

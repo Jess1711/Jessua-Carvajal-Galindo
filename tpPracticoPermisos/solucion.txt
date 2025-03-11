@@ -1,0 +1,47 @@
+ejercicio 1 
+
+Pregunta
+¿Qué número de permisos aplicarías y qué comando ejecutarías?
+En este caso aplicaria los numeros de permiso 64 
+6 (propietario) lectura (4)+ escritura(2)
+4 (grupo) lesctura(4)
+0 (otros)
+Permiso en la terminal 
+chmod 64 documento1.txt
+
+Ejercicio 2
+
+Pregunta 
+¿Qué comando aplicarías para asignar estos permisos?
+aplicaria el comando chmod 711 script.sh para que solo de los siguientes permisos 
+7 (propietario) lectura (4)+ escritura(2)+ejecucion (1)
+1 (grupo) ejecucion(1)
+1 (otros) ejecucion(1)
+
+Permisos en terminal 
+chmod 711 script.sh 
+
+Ejercicio 3 
+
+Pregunta
+¿Qué número de permisos es el adecuado?
+los numeros de permisos adecuados son los siguientes 
+6 (propietario) lectura (4)+ escritura(2)
+
+Permisos en terminal 
+chmod 6 config.cfg
+
+Ejercicio 4 
+
+Pregunta
+¿Qué comando utilizarías para establecer estos permisos?
+para este comando vamos a utilizar solo el comando chmod 4 secreto.key
+4 (propietario) lectura (4)
+0 (grupo)
+0 (otros)
+
+permiso en terminal 
+chmod 4 secreto.key
+
+
+
